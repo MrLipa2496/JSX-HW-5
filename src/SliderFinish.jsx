@@ -1,6 +1,7 @@
 import Slider from "./components/Slider";
+import "./App.css";
 
-function App() {
+function SliderFinish() {
   const sliderContent = [
     {
       id: 0,
@@ -36,9 +37,11 @@ function App() {
 
   return (
     <>
-      <Slider sliderContent={sliderContent} />
+      <div className="sliderWpapper">
+        <Slider sliderContent={sliderContent} />
+      </div>
     </>
   );
 }
 
-export default App;
+export default SliderFinish;
